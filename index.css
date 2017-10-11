@@ -1,0 +1,17 @@
+.mainDiv{
+    width: 100%;
+}
+.webViewDiv{
+    width: 70%;
+    float: left;
+}
+.fileUploadDiv{
+    width: 30%;
+    float: right
+} 
+#webview{
+    height: 800px !important;
+}
+.padding{
+    padding: 10px;
+}
