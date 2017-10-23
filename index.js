@@ -26,9 +26,6 @@ webview.addEventListener('ipc-message', function (event) {
 });
 fileInput.addEventListener('change', function (evt) {
     var file = evt.target.files[0];
-    var downloadfileBtn = document.getElementById("downloadCSVBtn");
-    downloadfileBtn.href = file.path;
-    downloadfileBtn.download = "DemoFile.csv";
     if (file != undefined) {
         var ext = file.name.slice((file.name.lastIndexOf(".") - 1 >>> 0) + 2);
         console.log(ext);
