@@ -19,18 +19,20 @@
     <div class="fileUploadDiv">
       <div class=" padding">
         <p>
-          <a href="sample.csv" download id="downloadCSVBtn">Download Sample CSV file</p>
-        <p>
-          <p>
-            <input id="chooseFileInput" type="file" />
-          </p>
-          <a id="downloadBtn">Download Images</a>
+          <a href="sample.csv" download id="downloadCSVBtn">Download Sample CSV file</a>          <!-- Download sample CSV file Link -->
         </p>
-
+        <p>
+          <input id="chooseFileInput" type="file" />          <!-- Upload CSV file -->
+        </p>
+        <p>
+          <input id="chooseFolderInput" type="file" webkitdirectory />          <!-- Folder chooser input Hidden -->
+          <button id="chooseFolderBtn">Choose Folder</button>          <!-- Choose Folder Button -->
+          <label id="folderPathLbl"></label>          <!-- Label to show Selected Folder Path -->
+        </p>
+        <a id="downloadBtn">Download Images</a>          <!-- Download Images Link -->
       </div>
     </div>
     <script>
-      // You can also require other files to run in this process
       require('./index.js');
     </script>
   </div>
